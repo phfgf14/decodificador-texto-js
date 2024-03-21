@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #E5E5E5;
+}
+
+.logo {
+  padding: 40px 0px 0px 10px;
+  }
+
+.mensagem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mensagem__inicial {
+  margin-top: 168px;
+  width: 680px;
+}
+
+.mensagem__inicial__digitada {
+  font-weight: 400;
+  font-size: 32px;
+  color: #0a3871;
+}
+
+.mensagem_alterada {
+  margin-top: 40px;
+  margin-right: 40px;
+  border-radius: 32px;
+  width: 400px;
+  text-align: center;
+  background-color: white;
+}
+
+.mensagem__inicial__digitada, .mensagem__alterada__digitada {
+  border: none;
+  outline: none;
+  resize: none;
+  text-transform: lowercase;
+  background-color:  #E5E5E5;
+  width: 100%;
+
+}
+
+.mensagem__alterada__digitada {
+
+  background-color: white;
+  border-radius: 32px;
+  font-weight: 400;
+  font-size: 24px; 
+  color: gray;
+}
+
+.mensagem__inicial__informacao {
+  font-size: 14px;
+}
+
+
+.mensagem__alterada__info__1 {
+font-weight: 700;
+font-size: 24px;
+color: #343a40;
+}
+
+.mensagem__alterada__info__2 {
+font-weight: 400;
+font-size: 16px;
+color: #495057;
+}
+
+.mensagem__inicial__sinal__exclamacao {
+  display: flex;
+  justify-content: flex-start;
+  width: 680px;
+  align-items: center;
+}
+
+.mensagem__inicial__informacao {
+  padding: 10px 10px;
+}
+
+.botao__criptografar__descriptografar {
+  display: flex;
+  justify-content: space-between;
+  width: 680px;
+}
+
+.botao_criptografar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #0A3871;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #0A3871;
+}
+
+.botao_descriptografar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #D8DFE8;
+  color: #0A3871;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #0A3871;
+}
+
+#copiar {
+  padding: 10px;
+}
+
+.botao_copiar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: white;
+  color: #0A3871;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #0A3871;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="mensagem">
+      <div class="logo">
+        <img src="assets/logo_alura.png" alt="Logo Alura">
+      </div>
+      <section class="mensagem__inicial">
+        <textarea id="id_texto_orginal" class="mensagem__inicial__digitada" cols="60" rows="10" placeholder="Digite seu texto" 
+        onkeypress="return letrasSemAcento(event);"></textarea>
+        <div class="mensagem__inicial__sinal__exclamacao">
+          <img src="assets/bi_exclamation-circle-fill.png" alt="Sinal de exclamação">
+          <p class="mensagem__inicial__informacao">Apenas letras minúsculas e sem acento</p>
+        </div>
+        <div class="botao__criptografar__descriptografar">
+          <button onclick="criptografar()" class="botao_criptografar">Criptografar</button>
+          <button onclick="descriptografar()" class="botao_descriptografar">Descriptografar</button>
+        </div>
+      </section>
+      <section class="mensagem_alterada">
+        <div id="imagem_sem_mensagem">
+          <img src="assets/1.PNG" alt="Nenhuma mensagem encontrada">
+        </div>
+        <textarea id="id_texto_alterado" class="mensagem__alterada__digitada" cols="50" rows="18" onkeypress="return letrasSemAcento(event);"></textarea>
+        <div id="copiar">
+          <button id="btn_copiar" onclick="copiar()" class="botao_copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
